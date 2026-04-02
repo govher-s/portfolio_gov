@@ -2,7 +2,7 @@
   cursor: url('../assets/hand.png') 0 0, auto !important;
 }
 
-/* This ensures it doesn't revert to a standard pointer on links */
+
 a, button {
   cursor: url('../assets/hand.png') 0 0, pointer !important;
 }

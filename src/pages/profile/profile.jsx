@@ -1,9 +1,13 @@
+import { useRef } from 'react'
+import Draggable from 'react-draggable'
 import './profile.css'
 
 export default function Profile({ onClose }) {
+    const nodeRef = useRef(null)
     return (
         <div className='window-overlay'>
-            <div className='screen-pop'>
+            <Draggable nodeRef={nodeRef} handle=".window-header">
+            <div className='screen-pop' ref={nodeRef}>
                 <div className='window-header'>
                     <span className='window-title'>C://users/govher/profile</span>
                     <button className='close-btn' onClick={onClose}>X</button>
@@ -16,6 +20,7 @@ export default function Profile({ onClose }) {
                     </div>
                 </div>
             </div>
+        </Draggable>
         </div>
     )
 }

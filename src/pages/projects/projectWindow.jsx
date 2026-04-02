@@ -1,16 +1,22 @@
+import { useRef } from 'react'
+import Draggable from 'react-draggable'
 import React from 'react';
 import './projects.css';
 
 export default function ProjectWindow({ projectId, onClose }) {
+    const nodeRef = useRef(null);
+
+    if (!projectId) return null;
+
     const projectData = {
         jaguard: {
-            title: "C://projects/jaguard.exe",
+            title: "C://projects/jaguard",
             content: (
                 <div>
                     <h2>JaGuard</h2>
                     <p><strong>Role:</strong> Frontend Developer & Designer</p>
                     <p><strong>Tech Stack:</strong> React, Vite, JavaScript</p>
-                    <p><strong>Design Tools:</strong> Adobe Illustrator</p>
+                    <p><strong>Design Tools:</strong> Adobe Illustrator, Figma</p>
                     <br />
                     <p>
                         JaGuard was a collaborative group project developed for my Software Engineering class. 
@@ -40,17 +46,31 @@ export default function ProjectWindow({ projectId, onClose }) {
             )
         },
         mango: {
-            title: "C://projects/mango.exe",
+            title: "C://projects/mango",
             content: (
                 <div>
                     <h2>manGo</h2>
                     <p><strong>Role:</strong> UI/UX Designer</p>
                     <p><strong>Tech Stack:</strong> Flutter, Dart</p>
+                    <p><strong>Design Tools:</strong> Figma, Affinity</p>
                     <br />
                     <p>
                         manGo is a bike and scooter rental application developed as a team project for a UX/UI class. 
                         As the lead designer for the team, my primary focus was creating an intuitive, accessible, and visually engaging user experience.
                     </p>
+                     <h3 style={{ marginTop: '20px', borderBottom: '2px solid #c268bd', paddingBottom: '5px' }}>Project Media</h3>
+                     <div style={{ display: 'flex', gap: '20px', marginTop: '15px' }}>
+                        <a href="https://www.figma.com/proto/PdAk2KcjWZr8WTs2SbHGlE/manGO?node-id=7-3&p=f&t=051PrnELbhDlQHSG-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=7%3A3&show-proto-sidebar=1" target="_blank" rel="noopener noreferrer" style={{ color: '#c268bd', fontWeight: 'bold', textDecoration: 'none' }}>
+                            Figma MockUp Version 1
+                        </a>
+                        <a href="https://www.figma.com/design/lMl8pR0jhcceuXcAXzftN5/manGo_rev01?node-id=63-863&t=DaNfaMMLpABjswej-1" target="_blank" rel="noopener noreferrer" style={{ color: '#c268bd', fontWeight: 'bold', textDecoration: 'none' }}>
+                            Figma MockUp Version 2
+                        </a>
+                        <break></break>
+                        <a href="https://github.com/govher-s/mango.git" target="_blank" rel="noopener noreferrer" style={{ color: '#c268bd', fontWeight: 'bold', textDecoration: 'none' }}>
+                            Repo Link
+                        </a>
+                    </div>
                 </div>
             )
         },
@@ -71,10 +91,8 @@ export default function ProjectWindow({ projectId, onClose }) {
         }
     };
 
-    // 2. Safety check: If a bad ID is passed, don't render anything
     if (!projectData[projectId]) return null;
 
-    // 3. Extract the right title and content based on what was clicked
     const { title, content } = projectData[projectId];
 
     return (

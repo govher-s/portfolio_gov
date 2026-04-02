@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
 
+a, button, .pixel-icon, .dock-icon {
+  cursor: url('../assets/hand.png') 0 0, pointer !important;
+}
+
 * {
   cursor: url('/hand.png') 0 0, auto !important;
   box-sizing: border-box;

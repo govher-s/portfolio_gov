@@ -1,15 +1,21 @@
 import React, { useState } from 'react';
+import { use, useRef } from 'react';
+import Draggable from 'react-draggable';
+import '../home/home'
+import Profile from '../profile/profile'
 import './projects.css'
 import { User, Folder, Heart, Briefcase, Zap, Home as HomeIcon} from 'pixelarticons/react'
 import ProjectWindow from "./projectWindow";
 
 export default function Projects({ onClose }) {
     const [activeProject, setActiveProject] = useState(null);
+    const nodeRef = useRef(null);
     return (
         <>
 
         <div className='window-overlay'>
-            <div className='screen-pop'>
+            <Draggable nodeRef={nodeRef} handle=".window-header">
+            <div className='screen-pop' ref={nodeRef}>
                 <div className='window-header'>
                     <span className='window-title'>C://users/govher/projects</span>
                     <button className='close-btn' onClick={onClose}>X</button>     
@@ -39,6 +45,7 @@ export default function Projects({ onClose }) {
         </div>
             </div>
         </div>
+    </Draggable>
         </div>
         <ProjectWindow 
                     projectId={activeProject} 

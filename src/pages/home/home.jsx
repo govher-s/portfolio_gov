@@ -1,10 +1,12 @@
 import { useState } from 'react'
 import './home.css'
 import Profile from '../profile/profile'
+import Projects from '../projects/projects'
 import { User, Folder, Heart, Briefcase, Zap, Home as HomeIcon} from 'pixelarticons/react'
 
 export default function Home() {
   const [isProfileOpen, setIsProfileOpen] = useState(false);
+  const [isProjectsOpen, setIsProjectsOpen] = useState(false);
   
   return (
     <div className="home">
@@ -17,10 +19,13 @@ export default function Home() {
             <User width={64} height={64} color="#c268bd" />
             <span className="icon-label">Profile</span>
           </a>
-          <a href="#projects" className="pixel-icon">
+          <a onClick={(e) => {
+            e.preventDefault();
+            setIsProjectsOpen(true);}}
+            href="#projects" className="pixel-icon">
             <Folder width={64} height={64} color="#c268bd" />
             <span className="icon-label">Projects</span>
-          </a>
+            </a>
           <a href="#hobbies" className="pixel-icon">
             <Folder width={64} height={64} color="#c268bd" />
             <span className="icon-label">Hobbies</span>
@@ -55,6 +60,7 @@ export default function Home() {
       </div>
 
       {isProfileOpen && <Profile onClose={() => setIsProfileOpen(false)} />}
+      {isProjectsOpen && <Projects onClose={() => setIsProjectsOpen(false)} />}
 
       <div className='home-title'>
           <span className='home-sub'>Govher's</span>

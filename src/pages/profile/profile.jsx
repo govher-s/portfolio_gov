@@ -11,7 +11,8 @@ export default function Profile({ onClose }) {
                 <div className='window-body'>
                     <div className='main-content'>
                         <h2>About Me</h2>
-                        <p>Hello! My name is Govher Sapardurdyyeva.</p>
+                        <p>Hello! My name is Govher Sapardurdyyeva. 
+                        I am a junior computer science student at South Dakota State University.</p>
                     </div>
                 </div>
             </div>

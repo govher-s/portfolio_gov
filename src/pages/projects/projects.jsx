@@ -34,13 +34,17 @@ export default function Projects({ onClose }) {
             <Folder width={64} height={64} color="#c268bd" />
             <span className="icon-label">Research</span>
           </a>
-          <a href="#porfolio" className="pixel-icon">
+          <a onClick={() => setActiveProject('heranPortfolio')} href="#porfolio" className="pixel-icon">
             <Folder width={64} height={64} color="#c268bd" />
-            <span className="icon-label">Heran's Portfolio</span>
+            <span className="icon-label">Heran Portfolio</span>
           </a>
-          <a href="#coffeeshop" className="pixel-icon">
+          <a onClick={() => setActiveProject('coffeeshop')} href="#coffeeshop" className="pixel-icon">
             <Folder width={64} height={64} color="#c268bd" />
             <span className="icon-label">Kag's Coffee</span>
+          </a>
+           <a onClick={() => setActiveProject('rnafolder')} href="#rnafolder" className="pixel-icon">
+            <Folder width={64} height={64} color="#c268bd" />
+            <span className="icon-label">RNA Folder</span>
           </a>
         </div>
             </div>

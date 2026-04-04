@@ -19,6 +19,8 @@ export default function ProjectWindow({ projectId, onClose }) {
                     <p><strong>Design Tools:</strong> Adobe Illustrator, Figma</p>
                     <br />
                     <p>
+                        Jaguard is a data breach monitoring platform designed to empower users to safeguard their digital identities. 
+                        By leveraging multiple security APIs, the application allows users to scan for compromised emails and usernames.
                         JaGuard was a collaborative group project developed for my Software Engineering class. 
                         I was responsible for the user interface and the overall visual identity of the application.
                     </p>
@@ -75,16 +77,83 @@ export default function ProjectWindow({ projectId, onClose }) {
             )
         },
         research: {
-            title: "C://projects/research.exe",
+            title: "C://projects/research",
             content: (
                 <div>
-                    <h2>Medical Imaging AI</h2>
-                    <p><strong>Role:</strong> Deep Learning Researcher</p>
-                    <p><strong>Collaboration:</strong> Teamed with Sara Harrath (Data Science)</p>
+                    <h2>Ovarian Ultrasound Image Classification Using Supervised and Semi-Supervised Learning</h2>
+                    <p><strong>Role:</strong> Team Lead</p>
+                    <p><strong>Tools:</strong>PyTorch, Google Colab</p>
                     <br />
                     <p>
                         An academic research project focused on the intersection of artificial intelligence and healthcare. 
-                        We utilized deep learning techniques to classify ovarian ultrasound images.
+                        We utilized deep learning techniques to classify ovarian ultrasound images. The research is still in progress.
+                    </p>
+                     <div style={{ display: 'flex', gap: '20px', marginTop: '15px' }}>
+                        <a href="/report.pdf" target="_blank" rel="noopener noreferrer" style={{ color: '#c268bd', fontWeight: 'bold', textDecoration: 'none' }}>
+                            Read Midterm Report
+                        </a>
+                    </div>
+                </div>
+            )
+        },
+    heranPortfolio: {
+            title: "C://projects/Heran's Portfolio",
+            content: (
+                <div>
+                    <h2>Personalized portfolio for a business student.</h2>
+                    <p><strong>Role:</strong> Developer</p>
+                    <p><strong>Tools:</strong>React + Vite, Javascript</p>
+                    <br />
+                    <p>
+                        Designed and deployed a custom personal portfolio website tailored for the business sector, focusing on a clean UI/UX and a structured it to present professional milestones and project case studies.
+                    </p>
+                     <div style={{ display: 'flex', gap: '20px', marginTop: '15px' }}>
+                        <a href="https://govher-s.github.io/heran-portfolio/#/" target="_blank" rel="noopener noreferrer" style={{ color: '#c268bd', fontWeight: 'bold', textDecoration: 'none' }}>
+                            Website Link
+                        </a>
+                        <a href="https://github.com/govher-s/heran-portfolio.git" target="_blank" rel="noopener noreferrer" style={{ color: '#c268bd', fontWeight: 'bold', textDecoration: 'none' }}>
+                            Repo Link
+                        </a>
+                    </div>
+                </div>
+            )
+        },
+    coffeeshop: {
+            title: "C://projects/Kag's coffee and bagels",
+            content: (
+                <div>
+                    <h2>Kag's Coffee and Bagels</h2>
+                    <p><strong>Role:</strong> UX / UI Designer</p>
+                    <p><strong>Tools:</strong>Fimga, React Native, Javascript</p>
+                    <br />
+                    <p>
+                        Designed a comprehensive food and beverage interface focused on user engagement and personalization. 
+                        Kag's Coffee & Bagels streamlines the ordering process while introducing social interactivity,
+                        allowing users to share their customized orders and connect directly with support through a centralized chat hub.
+                        The project is still in progress.
+                    </p>
+                     <div style={{ display: 'flex', gap: '20px', marginTop: '15px' }}>
+                        <a href="https://www.figma.com/proto/MxW7du3RnkpVFTsTNdkMU3/KAG-S-Coffee?node-id=102-38&t=VF39vZ58JXblcIIr-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2" target="_blank" rel="noopener noreferrer" style={{ color: '#c268bd', fontWeight: 'bold', textDecoration: 'none' }}>
+                            Figma MockUp (In progress)
+                        </a>
+                        
+                    </div>
+                </div>
+            )
+        },
+    rnafolder: {
+            title: "C://projects/RNA folder",
+            content: (
+                <div>
+                    <h2>RNA Folding Engine</h2>
+                    <p><strong>Tools:</strong>Google Colab, Pytorch</p>
+                    <br />
+                    <p>
+                        Can you predict the shape of a puzzle just by looking at the pieces? 
+                        This project uses Deep Learning to predict the 3D structure of RNA. 
+                        By identifying patterns in molecular sequences, the model "folds" the 
+                        RNA into the shapes that define its biological function.
+                        (This research is still in progress.)
                     </p>
                 </div>
             )

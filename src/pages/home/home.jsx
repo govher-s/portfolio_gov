@@ -8,7 +8,7 @@ import Skills from '../skills/skills'
 import Hobbies from '../hobbies/hobbies'
 import githubIcon from "../../assets/Github.svg";
 import linkedinIcon from "../../assets/linkedin.svg";
-import clickSound from "../../assets/click.mp3";
+import clickFile from "../../assets/click.mp3";
 
 export default function Home() {
   const [isProfileOpen, setIsProfileOpen] = useState(false);

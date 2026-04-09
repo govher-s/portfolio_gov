@@ -8,23 +8,23 @@ export default function App() {
   useEffect(() => {
     audioRef.current = new Audio(clickFile);
     audioRef.current.volume = 0.5;
-    
-   
-    audioRef.current.load();
 
     const playClick = (e) => {
+
       if (e.target.closest('button, a, .pixel-icon, .dock-icon')) {
-        const sound = audioRef.current;
-        if (sound) {
-          sound.currentTime = 0;
-          sound.play().catch(err => {
-            console.warn("Audio waiting for first user interaction...");
+        if (audioRef.current) {
+      
+          audioRef.current.currentTime = 0;
+          audioRef.current.play().catch(() => {
+            console.log("Audio play blocked: Click the page once to enable sound.");
           });
         }
       }
     };
 
+
     window.addEventListener('mousedown', playClick);
+
     return () => window.removeEventListener('mousedown', playClick);
   }, []);
 

@@ -6,9 +6,9 @@ import Experience from '../projects/experience'
 import { User, Folder, Heart, Briefcase, Zap, Home as HomeIcon, Mail, SettingsCog2, Brush, File, Recycle} from 'pixelarticons/react'
 import Skills from '../skills/skills'
 import Hobbies from '../hobbies/hobbies'
-import githubIcon from '../assets/Github.svg'
-import linkedinIcon from '../assets/linkedin.svg'
-import clickSound from '../assets/click.mp3'
+import githubIcon from "../../assets/Github.svg";
+import linkedinIcon from "../../assets/linkedin.svg";
+import clickSound from "../../assets/click.mp3";
 
 export default function Home() {
   const [isProfileOpen, setIsProfileOpen] = useState(false);

@@ -16,7 +16,7 @@ export default function Profile({ onClose }) {
                     <div className='main-content'>
                         <h2>System Profile: Govher Sapardurdyyeva</h2>
                         <h3>Hello! My name is Govher Sapardurdyyeva.</h3>
-                        <p>I am a junior Computer Science student and Software 
+                        <p>I am a junior Computer Science student with Software 
                             Engineering minor at South Dakota State University.
                             I built this 90s-inspired portfolio because I wanted a 
                             space that showcases my technical skills while

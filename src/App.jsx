@@ -1,12 +1,12 @@
 import { useEffect, useRef } from 'react'
 import Home from './pages/home/home'
-import clickFile from './assets/click.mp3'
+import clickSound from './assets/click.mp3'
 
 export default function App() {
   const audioRef = useRef(null);
 
   useEffect(() => {
-    audioRef.current = new Audio(clickFile);
+    audioRef.current = new Audio(clickSound);
     audioRef.current.volume = 0.5;
 
     const playClick = (e) => {

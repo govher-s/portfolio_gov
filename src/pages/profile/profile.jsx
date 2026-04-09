@@ -9,15 +9,23 @@ export default function Profile({ onClose }) {
             <Draggable nodeRef={nodeRef} handle=".window-header">
             <div className='screen-pop' ref={nodeRef}>
                 <div className='window-header'>
-                    <span className='window-title'>C://users/govher/profile</span>
+                    <span className='window-title'>C://users/govher/readme.md</span>
                     <button className='close-btn' onClick={onClose}>X</button>
                 </div>
                 <div className='window-body'>
                     <div className='main-content'>
-                        <h2>About Me</h2>
-                        <p>Hello! My name is Govher Sapardurdyyeva. 
-                        I am a junior computer science student at South Dakota State University.</p>
+                        <h2>System Profile: Govher Sapardurdyyeva</h2>
+                        <h3>Hello! My name is Govher Sapardurdyyeva.</h3>
+                        <p>I am a junior Computer Science student and Software 
+                            Engineering minor at South Dakota State University.
+                            I built this 90s-inspired portfolio because I wanted a 
+                            space that showcases my technical skills while
+                            showing my creative side as well. I love building digital 
+                            experiences that make people smile. Take a look around my desktop!</p>
                     </div>
+                 <div style={{ textAlign: 'center', marginTop: '30px', color: '#888', borderTop: '1px dashed #ccc', paddingTop: '15px' }}>
+                                <em>[ Note: you can drag the windows! ]</em>
+                            </div>
                 </div>
             </div>
         </Draggable>

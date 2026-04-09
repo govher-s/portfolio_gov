@@ -1,0 +1,62 @@
+.skills-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 10px;
+  font-family: 'Silkscreen', sans-serif;
+}
+
+
+@media (min-width: 650px) {
+  .skills-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.skill-category {
+  background: rgba(255, 255, 255, 0.6);
+  border: 2px solid #c268bd;
+  padding: 15px;
+  /* Adds that retro blocky shadow */
+  box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.1); 
+}
+
+.skill-category h3 {
+  color: #c268bd;
+  font-size: 1.1rem;
+  margin-top: 0;
+  margin-bottom: 15px;
+  border-bottom: 2px dashed #444;
+  padding-bottom: 8px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0px #fff;
+}
+
+.skill-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px dotted rgba(68, 68, 68, 0.4);
+}
+
+.skill-row:last-child {
+  border-bottom: none;
+}
+
+.skill-name {
+  color: #444;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.star-container {
+  color: #c268bd;
+  letter-spacing: 2px;
+  font-size: 1rem;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
+}
+
+.skill-row:hover {
+  cursor: url('/hand.png') 0 0, auto !important;
+}

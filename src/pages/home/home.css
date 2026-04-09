@@ -46,7 +46,10 @@ body {
 
 .left { left: 0; }
 .right { right: 0; }
-
+.bottom-right {
+  right: 0;
+  bottom: 100px;
+}
 .icon-label {
   font-family: 'Silkscreen', sans-serif;
   font-size: 13px;

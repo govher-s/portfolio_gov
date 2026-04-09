@@ -2,11 +2,34 @@ import { useState } from 'react'
 import './home.css'
 import Profile from '../profile/profile'
 import Projects from '../projects/projects'
-import { User, Folder, Heart, Briefcase, Zap, Home as HomeIcon} from 'pixelarticons/react'
+import Experience from '../projects/experience'
+import { User, Folder, Heart, Briefcase, Zap, Home as HomeIcon, Mail, SettingsCog2, Brush, File, Recycle} from 'pixelarticons/react'
+import Skills from '../skills/skills'
+import Hobbies from '../hobbies/hobbies'
 
 export default function Home() {
   const [isProfileOpen, setIsProfileOpen] = useState(false);
   const [isProjectsOpen, setIsProjectsOpen] = useState(false);
+  const [isExperienceOpen, setIsExperienceOpen] = useState(false);
+  const [isSkillsOpen, setIsSkillsOpen] = useState(false);
+  const [isHobbiesOpen, setIsHobbiesOpen] = useState(false);
+
+  const closeAll = (e) => {
+    e.preventDefault();
+    setIsProfileOpen(false);
+    setIsProjectsOpen(false);
+    setIsExperienceOpen(false);
+    setIsSkillsOpen(false);
+    setIsHobbiesOpen(false);
+  };
+
+  const handleClose = () => {
+    // Attemot to close
+    if (window.confirm("Do you want to shut down?")) {
+      window.close();
+      window.location.href = "about:blank";
+    }
+  };
   
   return (
     <div className="home">
@@ -16,8 +39,8 @@ export default function Home() {
             e.preventDefault();
             setIsProfileOpen(true);
           }}href='#profile' className='pixel-icon'>
-            <User width={64} height={64} color="#c268bd" />
-            <span className="icon-label">Profile</span>
+            <File width={64} height={64} color="#c268bd" />
+            <span className="icon-label">Readme.md</span>
           </a>
           <a onClick={(e) => {
             e.preventDefault();
@@ -26,24 +49,42 @@ export default function Home() {
             <Folder width={64} height={64} color="#c268bd" />
             <span className="icon-label">Projects</span>
             </a>
-          <a href="#hobbies" className="pixel-icon">
-            <Folder width={64} height={64} color="#c268bd" />
-            <span className="icon-label">Hobbies</span>
+          <a onClick={(e) => {
+            e.preventDefault();
+            setIsHobbiesOpen(true);
+          }} href="#hobbies" className="pixel-icon">
+            <Brush width={64} height={64} color="#c268bd" />
+            <span className="icon-label">Hobbies.bmp</span>
           </a>
         </div>
 
         <div className="icon-group right">
-          <a href="#experience" className="pixel-icon">
-            <Folder width={64} height={64} color="#c268bd" />
+          <a onClick={(e) => {
+            e.preventDefault();
+            setIsExperienceOpen(true);
+          }}href="#experience" className="pixel-icon">
+            <Briefcase width={64} height={64} color="#c268bd" />
             <span className="icon-label">Experience</span>
           </a>
-          <a href="#skills" className="pixel-icon">
-            <Folder width={64} height={64} color="#c268bd" />
-            <span className="icon-label">Skills</span>
+          <a onClick={(e) => {
+            e.preventDefault();
+            setIsSkillsOpen(true);
+          }}href="#skills" className="pixel-icon">
+            <SettingsCog2 width={64} height={64} color="#c268bd" />
+            <span className="icon-label">Skills.ini</span>
           </a>
         </div>
+        <div className="icon-group bottom-right">
+        <a onClick={(e) => {
+          e.preventDefault();
+          handleClose();
+        }} href="#close" className="pixel-icon">
+          <Recycle width={64} height={64} color="#c268bd" />
+          <span className="icon-label">Recycle</span>
+        </a>
+      </div>
         <div className='bottom-menu'>
-          <a href='#home' className='dock-icon'>
+          <a href='#home' onClick={closeAll} className='dock-icon'>
             <HomeIcon width={64} height={64} color="#c268bd" />
             <span className="dock-tooltip">Home</span>
           </a>
@@ -56,11 +97,18 @@ export default function Home() {
             <img src="/linkedin.svg" alt="LinkedIn" width={80} height={80} className="svg-img" />
             <span className="dock-tooltip">LinkedIn</span>
           </a>
+          <a href='mailto:gs.govher@gmail.com' className='dock-icon'>
+            <Mail width={64} height={64} color="#c268bd" />
+            <span className="dock-tooltip">Email</span>
+          </a>
         </div>
       </div>
 
       {isProfileOpen && <Profile onClose={() => setIsProfileOpen(false)} />}
       {isProjectsOpen && <Projects onClose={() => setIsProjectsOpen(false)} />}
+      {isExperienceOpen && <Experience onClose={() => setIsExperienceOpen(false)} />}
+      {isSkillsOpen && <Skills onClose={() => setIsSkillsOpen(false)} />}
+      {isHobbiesOpen && <Hobbies onClose={() => setIsHobbiesOpen(false)} />}
 
       <div className='home-title'>
           <span className='home-sub'>Govher's</span>

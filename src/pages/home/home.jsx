@@ -77,7 +77,7 @@ export default function Home() {
         <div className="icon-group bottom-right">
         <a onClick={(e) => {
           e.preventDefault();
-          handleClose();
+          handleClose(e);
         }} href="#close" className="pixel-icon">
           <Recycle width={64} height={64} color="#c268bd" />
           <span className="icon-label">Recycle</span>

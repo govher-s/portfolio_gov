@@ -1,9 +1,10 @@
 import { useEffect } from 'react'
 import Home from './pages/home/home'
+import clickSound from '../assets/click.mp3'
 
 export default function App() {
   useEffect(() => {
-    const clickSound = new Audio('/click.mp3');
+    const clickSound = new Audio(clickSound);
     clickSound.volume = 0.5;
 
     const playClick = (e) => {

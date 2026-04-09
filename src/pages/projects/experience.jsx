@@ -1,6 +1,7 @@
 import { useRef } from 'react'
 import Draggable from 'react-draggable'
 import './projects.css' 
+import resume from '../assets/Govher_Sapardurdyyeva_Resume.pdf'
 
 export default function Experience({ onClose }) {
     const nodeRef = useRef(null)
@@ -97,7 +98,7 @@ export default function Experience({ onClose }) {
                                 borderTop: '2px dashed #c268bd' 
                             }}>
                                 <a 
-                                    href="/Govher_Sapardurdyyeva_Resume.pdf" 
+                                    href={resume} 
                                     download 
                                     style={{ 
                                         backgroundColor: '#c268bd', 

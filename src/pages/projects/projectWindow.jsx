@@ -2,7 +2,10 @@ import { useRef } from 'react'
 import Draggable from 'react-draggable'
 import React from 'react';
 import './projects.css';
-
+import jaguradDoc from '../assets/Jaguard_RD.pdf'
+import jaguradLogo from '../assets/Jaguard.svg'
+import resume from '../assets/Govher_Sapardurdyyeva_Resume.pdf'
+import report from '../assets/report.pdf'
 export default function ProjectWindow({ projectId, onClose }) {
     const nodeRef = useRef(null);
 
@@ -33,11 +36,11 @@ export default function ProjectWindow({ projectId, onClose }) {
                     <h3 style={{ marginTop: '20px', borderBottom: '2px solid #c268bd', paddingBottom: '5px' }}>Project Media</h3>
                     
                     <div style={{ display: 'flex', gap: '15px', marginTop: '15px', overflowX: 'auto' }}>
-                        <img src="jaguard/jaguard.svg" alt="JaGuard Logo" style={{ width: '200px', height: '200px', objectFit: 'contain', border: '2px transparent' }} />
+                        <img src={jaguradLogo} alt="JaGuard Logo" style={{ width: '200px', height: '200px', objectFit: 'contain', border: '2px transparent' }} />
                     </div>
 
                     <div style={{ display: 'flex', gap: '20px', marginTop: '15px' }}>
-                        <a href="jaguard/Jaguard_RD.pdf" target="_blank" rel="noopener noreferrer" style={{ color: '#c268bd', fontWeight: 'bold', textDecoration: 'none' }}>
+                        <a href={jaguradDoc} target="_blank" rel="noopener noreferrer" style={{ color: '#c268bd', fontWeight: 'bold', textDecoration: 'none' }}>
                             Read Requirements Document
                         </a>
                         <a href="https://drive.google.com/file/d/1unquAns7hww024H6IAErE3n7VQJxIaFM/view?usp=sharing" target="_blank" rel="noopener noreferrer" style={{ color: '#c268bd', fontWeight: 'bold', textDecoration: 'none' }}>
@@ -89,7 +92,7 @@ export default function ProjectWindow({ projectId, onClose }) {
                         We utilized deep learning techniques to classify ovarian ultrasound images. The research is still in progress.
                     </p>
                      <div style={{ display: 'flex', gap: '20px', marginTop: '15px' }}>
-                        <a href="report.pdf" target="_blank" rel="noopener noreferrer" style={{ color: '#c268bd', fontWeight: 'bold', textDecoration: 'none' }}>
+                        <a href={report} target="_blank" rel="noopener noreferrer" style={{ color: '#c268bd', fontWeight: 'bold', textDecoration: 'none' }}>
                             Read Midterm Report
                         </a>
                     </div>

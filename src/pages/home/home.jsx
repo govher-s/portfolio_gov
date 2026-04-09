@@ -6,6 +6,9 @@ import Experience from '../projects/experience'
 import { User, Folder, Heart, Briefcase, Zap, Home as HomeIcon, Mail, SettingsCog2, Brush, File, Recycle} from 'pixelarticons/react'
 import Skills from '../skills/skills'
 import Hobbies from '../hobbies/hobbies'
+import githubIcon from '../assets/Github.svg'
+import linkedinIcon from '../assets/linkedin.svg'
+import clickSound from '../assets/click.mp3'
 
 export default function Home() {
   const [isProfileOpen, setIsProfileOpen] = useState(false);
@@ -89,12 +92,12 @@ export default function Home() {
             <span className="dock-tooltip">Home</span>
           </a>
           <a href='https://github.com/govher-s' target="_blank" rel="noreferrer" className='dock-icon'>
-            <img src="/Github.svg" alt="Github" width={48} height={48} className="svg-img" />
+            <img src={githubIcon} alt="Github" width={48} height={48} className="svg-img" />
             <span className="dock-tooltip">Github</span>
           </a>
           
           <a href='https://linkedin.com/in/govher-sapardurdyyeva' target="_blank" rel="noreferrer" className='dock-icon'>
-            <img src="/linkedin.svg" alt="LinkedIn" width={80} height={80} className="svg-img" />
+            <img src={linkedinIcon} alt="LinkedIn" width={80} height={80} className="svg-img" />
             <span className="dock-tooltip">LinkedIn</span>
           </a>
           <a href='mailto:gs.govher@gmail.com' className='dock-icon'>

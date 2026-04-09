@@ -26,13 +26,10 @@ export default function Home() {
     setIsHobbiesOpen(false);
   };
 
-  const handleClose = (e) => {
-    // Attemot to close
-    if (window.confirm("Do you want to shut down?")) {
-      window.close();
-      window.location.href = "about:blank";
-    }
-  };
+  const handleClose = (e) => { 
+  e.preventDefault(); 
+  if (window.confirm("Shut down?")) window.location.href = "about:blank";
+};
   
   return (
     <div className="home">

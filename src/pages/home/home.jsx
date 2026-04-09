@@ -26,7 +26,7 @@ export default function Home() {
     setIsHobbiesOpen(false);
   };
 
-  const handleClose = () => {
+  const handleClose = (e) => {
     // Attemot to close
     if (window.confirm("Do you want to shut down?")) {
       window.close();

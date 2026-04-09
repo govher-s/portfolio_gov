@@ -3,7 +3,7 @@ import Draggable from 'react-draggable'
 import React from 'react';
 import './projects.css';
 import jaguradDoc from '../../assets/Jaguard_RD.pdf'
-import jaguradLogo from '../../assets/Jaguard.svg'
+import jaguradLogo from '../../assets/jaguard.svg'
 import resume from '../../assets/Govher_Sapardurdyyeva_Resume.pdf'
 import report from '../../assets/report.pdf'
 export default function ProjectWindow({ projectId, onClose }) {

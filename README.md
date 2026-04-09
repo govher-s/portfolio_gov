@@ -3,5 +3,5 @@
 A retro-pixel portfolio built with React & Vite.
 Features:
 - Draggable, interactive desktop components.
-- Showcases class and personal projects.
+- Showcases skills and personal projects.
 

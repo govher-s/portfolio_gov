@@ -3,12 +3,11 @@ import './home.css'
 import Profile from '../profile/profile'
 import Projects from '../projects/projects'
 import Experience from '../projects/experience'
-import { User, Folder, Heart, Briefcase, Zap, Home as HomeIcon, Mail, SettingsCog2, Brush, File, Recycle} from 'pixelarticons/react'
+import { User, Folder, Heart, Briefcase, Zap, Home as HomeIcon, Mail, SettingsCog2, Brush, File, Recycle, Power} from 'pixelarticons/react'
 import Skills from '../skills/skills'
 import Hobbies from '../hobbies/hobbies'
 import githubIcon from "../../assets/Github.svg";
 import linkedinIcon from "../../assets/linkedin.svg";
-import clickFile from "../../assets/click.mp3";
 
 export default function Home() {
   const [isProfileOpen, setIsProfileOpen] = useState(false);
@@ -79,8 +78,8 @@ export default function Home() {
           e.preventDefault();
           handleClose(e);
         }} href="#close" className="pixel-icon">
-          <Recycle width={64} height={64} color="#c268bd" />
-          <span className="icon-label">Recycle</span>
+          <Power width={64} height={64} color="#c268bd" />
+          <span className="icon-label">Close</span>
         </a>
       </div>
         <div className='bottom-menu'>

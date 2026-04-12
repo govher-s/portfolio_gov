@@ -89,7 +89,7 @@ export default function Experience({ onClose }) {
                                 <li><strong>Local Orphanage:</strong> Created activities to help children get familiar with technology.</li>
                             </ul>
 
-                            {/* DOWNLOAD BUTTON MOVED TO BOTTOM */}
+                            {/* download btn*/}
                             <div style={{ 
                                 display: 'flex', 
                                 justifyContent: 'center', 

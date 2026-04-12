@@ -99,7 +99,7 @@ export default function Experience({ onClose }) {
                             }}>
                                 <a 
                                     href={resume} 
-                                    download 
+                                    download="Govher_Sapardurdyyeva_Resume.pdf"
                                     style={{ 
                                         backgroundColor: '#c268bd', 
                                         color: 'white', 

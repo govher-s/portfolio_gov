@@ -1,7 +1,7 @@
 import { useRef } from 'react'
 import Draggable from 'react-draggable'
 import './projects.css' 
-import resume from '../../assets/Govher_Sapardurdyyeva_Resume.pdf'
+import resume from '../../assets/Govher_Sapardurdyyeva_resumeLatex26-2.pdf'
 
 export default function Experience({ onClose }) {
     const nodeRef = useRef(null)

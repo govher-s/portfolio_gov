@@ -92,7 +92,7 @@ export default function Home() {
             <span className="dock-tooltip">Github</span>
           </a>
           
-          <a href='https://linkedin.com/in/govher-sapardurdyyeva' target="_blank" rel="noreferrer" className='dock-icon'>
+          <a href='https://www.linkedin.com/in/govher-sapardurdyyeva-701a96201/' target="_blank" rel="noreferrer" className='dock-icon'>
             <img src={linkedinIcon} alt="LinkedIn" width={80} height={80} className="svg-img" />
             <span className="dock-tooltip">LinkedIn</span>
           </a>

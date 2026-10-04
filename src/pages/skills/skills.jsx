@@ -8,7 +8,8 @@ const SkillsData = {
     { name: "JavaScript", stars: 3 }, 
     { name: "Dart", stars: 2 }, 
     { name: "SQL (Postgres)", stars: 3 },
-    { name: "C++ / C#", stars: 3 }
+    { name: "C++ / C#", stars: 3 },
+    { name: "C", stars: 3 }
   ],
   tools: [
     { name: "React / Vite", stars: 4 }, 
@@ -18,7 +19,16 @@ const SkillsData = {
     { name: "Docker", stars: 4},
     { name: "Google Colab", stars: 5 }, 
     { name: "Jupyter Notebook", stars: 4 }, 
-    { name: "Overleaf", stars: 5 }
+    { name: "Overleaf", stars: 5 },
+    { name: "Visual Studio", stars: 4 },
+    { name: "Unity", stars: 3 },
+    { name: "Windows / Unix", stars: 4 }
+  ],
+  aiml: [
+    { name: "PyTorch", stars: 3 },
+    { name: "TensorFlow", stars: 3 },
+    { name: "Supervised Learning", stars: 3 },
+    { name: "Semi-Supervised Learning", stars: 3 }
   ],
   design: [
     { name: "Adobe Creative Suite", stars: 3 },
@@ -31,9 +41,9 @@ const SkillsData = {
   languages: [
     { name: "Russian (Native)", stars: 5 }, 
     { name: "Turkmen (Native)", stars: 5 }, 
-    { name: "English", stars: 5 }, 
-    { name: "Turkish", stars: 5 }, 
-    { name: "German", stars: 2 } 
+    { name: "English (Fluent)", stars: 5 }, 
+    { name: "Turkish (Fluent)", stars: 5 }, 
+    { name: "German (Elementary)", stars: 2 } 
   ]
 };
 
@@ -80,6 +90,16 @@ export default function Skills({ onClose }) {
                                     <div key={t.name} className="skill-row">
                                         <span className="skill-name">{t.name}</span>
                                         <StarRating count={t.stars} />
+                                    </div>
+                                ))}
+                            </section>
+
+                            <section className="skill-category">
+                                <h3>[ AI / ML ]</h3>
+                                {SkillsData.aiml.map(a => (
+                                    <div key={a.name} className="skill-row">
+                                        <span className="skill-name">{a.name}</span>
+                                        <StarRating count={a.stars} />
                                     </div>
                                 ))}
                             </section>

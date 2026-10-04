@@ -19,15 +19,25 @@ export default function Experience({ onClose }) {
                             
                             <h2 style={{ borderBottom: '2px solid #c268bd', paddingBottom: '5px' }}>Professional Experience</h2>
                             
-                            {/* SDSU Housing */}
+                            {/* SDSU Housing - Team Lead */}
+                            <div style={{ marginBottom: '20px' }}>
+                                <h3 style={{ margin: '10px 0 0 0' }}>Housing Program Team Lead</h3>
+                                <p style={{ color: '#c268bd', fontWeight: 'bold', margin: '2px 0' }}>South Dakota State University - Housing and Residential Life</p>
+                                <p style={{ fontSize: '12px', fontStyle: 'italic' }}>Apr. 2026 – Aug. 2026 | Brookings, SD</p>
+                                <ul style={{ paddingLeft: '20px' }}>
+                                    <li>Led and supervised a team of 6 Housing Program Assistants in supporting residential summer camp operations.</li>
+                                    <li>Built and managed staff schedules and coordinated residential logistics across approximately 20–25 camps.</li>
+                                </ul>
+                            </div>
+
+                            {/* SDSU Housing - RA */}
                             <div style={{ marginBottom: '20px' }}>
                                 <h3 style={{ margin: '10px 0 0 0' }}>Resident Assistant</h3>
                                 <p style={{ color: '#c268bd', fontWeight: 'bold', margin: '2px 0' }}>South Dakota State University - Housing and Residential Life</p>
                                 <p style={{ fontSize: '12px', fontStyle: 'italic' }}>Aug. 2023 – Present | Brookings, SD</p>
                                 <ul style={{ paddingLeft: '20px' }}>
-                                    <li>Enforcing university housing policies and code of conduct to ensure the safety and security of residents.</li>
-                                    <li>Documenting incidents in confidential reports.</li>
-                                    <li>Serving as a primary resource and mentor for residents.</li>
+                                    <li>Enforcing university housing policies and documenting incidents in confidential reports.</li>
+                                    <li>Serving as a primary resource and mentor for residents on personal, academic, and social issues.</li>
                                 </ul>
                             </div>
 
@@ -37,19 +47,20 @@ export default function Experience({ onClose }) {
                                 <p style={{ color: '#c268bd', fontWeight: 'bold', margin: '2px 0' }}>South Dakota State University - Miller Wellness Center</p>
                                 <p style={{ fontSize: '12px', fontStyle: 'italic' }}>March 2023 – Present | Brookings, SD</p>
                                 <ul style={{ paddingLeft: '20px' }}>
-                                    <li>Monitoring and maintained esports lab equipment and gaming PCs.</li>
-                                    <li>Troubleshooting hardware, software, and network connectivity issues.</li>
-                                    <li>Assisting students with system logins and basic technical troubleshooting.</li>
+                                    <li><em>Employee of the Month (March 2026)</em></li>
+                                    <li>Monitoring and maintaining esports lab equipment, including gaming PCs and consoles.</li>
+                                    <li>Troubleshooting hardware, software, and network connectivity issues in real time.</li>
                                 </ul>
                             </div>
 
-                             {/* Walmart */}
-                             <div style={{ marginBottom: '20px' }}>
-                                <h3 style={{ margin: '10px 0 0 0' }}>Health and Beauty TA</h3>
+                            {/* Walmart */}
+                            <div style={{ marginBottom: '20px' }}>
+                                <h3 style={{ margin: '10px 0 0 0' }}>Health and Beauty Team Associate</h3>
                                 <p style={{ color: '#c268bd', fontWeight: 'bold', margin: '2px 0' }}>Walmart Supercenter #1538</p>
                                 <p style={{ fontSize: '12px', fontStyle: 'italic' }}>Nov. 2024 – Oct. 2025 | Brookings, SD</p>
                                 <ul style={{ paddingLeft: '20px' }}>
-                                    <li>Assist with product inquiries, and provide personalized product recommendations.</li>
+                                    <li>Stocked and replenished health and beauty products to maintain fully merchandised shelves.</li>
+                                    <li>Conducted regular inventory scans to verify product counts and ensure accuracy.</li>
                                 </ul>
                             </div>
 
@@ -64,10 +75,21 @@ export default function Experience({ onClose }) {
                                 </ul>
                             </div>
 
+                            {/* Yedi Dost Mebel */}
+                            <div style={{ marginBottom: '20px' }}>
+                                <h3 style={{ margin: '10px 0 0 0' }}>3D Designer</h3>
+                                <p style={{ color: '#c268bd', fontWeight: 'bold', margin: '2px 0' }}>Yedi Dost Mebel</p>
+                                <p style={{ fontSize: '12px', fontStyle: 'italic' }}>Jun. 2022 – Nov. 2022 | Turkmenbashi city, Turkmenistan</p>
+                                <ul style={{ paddingLeft: '20px' }}>
+                                    <li>Built 3D models of furniture using Blender.</li>
+                                    <li>Set costs and project fees according to budget using Excel.</li>
+                                </ul>
+                            </div>
+
                             {/* Gap Construction */}
                             <div style={{ marginBottom: '20px' }}>
                                 <h3 style={{ margin: '10px 0 0 0' }}>Architect Assistant</h3>
-                                <p style={{ color: '#c268bd', fontWeight: 'bold', margin: '2px 0' }}>Gap Construction and Investment Ltd</p>
+                                <p style={{ color: '#c268bd', fontWeight: 'bold', margin: '2px 0' }}>Inros Lackner & Gap Construction and Investment Ltd</p>
                                 <p style={{ fontSize: '12px', fontStyle: 'italic' }}>Oct. 2017 – March 2020 | Turkmenbashi city, Turkmenistan</p>
                                 <ul style={{ paddingLeft: '20px' }}>
                                     <li>Assisted architects and engineers in updating and revising technical drawings using AutoCAD.</li>
@@ -78,15 +100,15 @@ export default function Experience({ onClose }) {
                             <h2 style={{ borderBottom: '2px solid #c268bd', paddingBottom: '5px', marginTop: '30px' }}>Honors & Awards</h2>
                             <ul style={{ paddingLeft: '20px' }}>
                                 <li><strong>Jerome J. Lohr College of Engineering Scholarship</strong> — 2026</li>
-                                <li><strong>Han & Bang Kim Student Employee Award</strong> — 2024</li>
-                                <li><strong>Top Up Scholarship</strong> (American Councils for International Education) — 2023 - 2025</li>
+                                <li><strong>Han & Bang Kim Student Employee Award</strong> — 2024, 2026</li>
+                                <li><strong>Top-Up Scholarship</strong> (American Councils for International Education) — 2023 - 2025</li>
                                 <li><strong>Jackrabbit Guarantee Scholarship</strong> — 2023 - Present</li>
                             </ul>
 
                             <h2 style={{ borderBottom: '2px solid #c268bd', paddingBottom: '5px', marginTop: '30px' }}>Volunteering</h2>
                             <ul style={{ paddingLeft: '20px' }}>
-                                <li><strong>Technovation Girls:</strong> Mentored young girls to create an app that solves a problem in their community.</li>
-                                <li><strong>Local Orphanage:</strong> Created activities to help children get familiar with technology.</li>
+                                <li><strong>Technovation Girls</strong> (Student Mentor, Oct. 2021 – Apr. 2025, seasonal): Mentored a team of girls in designing and building an app to address a community problem.</li>
+                                <li><strong>Orphan School for Children with Disabilities</strong> (Technology Volunteer, Nov. 2020 – May 2021): Designed and led hands-on activities to help children build familiarity and comfort with technology.</li>
                             </ul>
 
                             {/* download btn*/}

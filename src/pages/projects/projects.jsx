@@ -22,17 +22,25 @@ export default function Projects({ onClose }) {
                 </div>
                 <div className='window-body'>
             <div className='main-content'>
+            <a onClick={() => setActiveProject('radar')} href="#radar" className="pixel-icon">
+            <Folder width={64} height={64} color="#c268bd" />
+            <span className="icon-label">Radar Boom</span>
+          </a>
             <a onClick={() => setActiveProject('jaguard')} href="#jaguard" className="pixel-icon">
             <Folder width={64} height={64} color="#c268bd" />
             <span className="icon-label">JaGuard</span>
           </a>
           <a onClick={() => setActiveProject('mango')} href="#mango" className="pixel-icon">
             <Folder width={64} height={64} color="#c268bd" />
-            <span className="icon-label">manGo</span>
+            <span className="icon-label">manGO</span>
           </a>
           <a onClick={() => setActiveProject('research')} href="#dlresearch" className="pixel-icon">
             <Folder width={64} height={64} color="#c268bd" />
             <span className="icon-label">Research</span>
+          </a>
+          <a onClick={() => setActiveProject('stress')} href="#stress" className="pixel-icon">
+            <Folder width={64} height={64} color="#c268bd" />
+            <span className="icon-label">Stress Study</span>
           </a>
           <a onClick={() => setActiveProject('heranPortfolio')} href="#porfolio" className="pixel-icon">
             <Folder width={64} height={64} color="#c268bd" />

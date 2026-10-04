@@ -12,12 +12,29 @@ export default function ProjectWindow({ projectId, onClose }) {
     if (!projectId) return null;
 
     const projectData = {
+        radar: {
+            title: "C://projects/radar",
+            content: (
+                <div>
+                    <h2>Radar Algorithm for Precision Sprayer Boom Height Control</h2>
+                    <p><strong>Type:</strong> Senior Design Project for CNH (Raven)</p>
+                    <p><strong>Timeline:</strong> Aug. 2026 – May 2027 (In progress)</p>
+                    <p><strong>Tech Stack:</strong> C, FFT / Signal Processing</p>
+                    <br />
+                    <ul style={{ paddingLeft: '20px', marginTop: '10px' }}>
+                        <li>Building an FFT-based algorithm to convert radar data into real-time canopy and ground distance measurements for automated sprayer boom control.</li>
+                        <li>Optimizing the algorithm for embedded constraints and C portability.</li>
+                    </ul>
+                </div>
+            )
+        },
         jaguard: {
             title: "C://projects/jaguard",
             content: (
                 <div>
                     <h2>JaGuard</h2>
                     <p><strong>Role:</strong> Frontend Developer & Designer</p>
+                    <p><strong>Timeline:</strong> Sept. 2025 – May 2026</p>
                     <p><strong>Tech Stack:</strong> React, Vite, JavaScript</p>
                     <p><strong>Design Tools:</strong> Adobe Illustrator, Figma</p>
                     <br />
@@ -28,9 +45,9 @@ export default function ProjectWindow({ projectId, onClose }) {
                         I was responsible for the user interface and the overall visual identity of the application.
                     </p>
                     <ul style={{ paddingLeft: '20px', marginTop: '10px' }}>
-                        <li>Created the brand identity and designed the project logo using Adobe Illustrator.</li>
+                        <li>Conceptualized and branded the product, including the logo, naming, and overall platform theme.</li>
                         <li>Designed the layout and visual structure for all official project documentation.</li>
-                        <li>Developed and implemented the complete frontend using React, Vite, and JavaScript.</li>
+                        <li>Developed the frontend using React, Vite, and JavaScript, building dashboards for monitoring data.</li>
                     </ul>
 
                     <h3 style={{ marginTop: '20px', borderBottom: '2px solid #c268bd', paddingBottom: '5px' }}>Project Media</h3>
@@ -54,14 +71,15 @@ export default function ProjectWindow({ projectId, onClose }) {
             title: "C://projects/mango",
             content: (
                 <div>
-                    <h2>manGo</h2>
-                    <p><strong>Role:</strong> UI/UX Designer</p>
+                    <h2>manGO</h2>
+                    <p><strong>Role:</strong> UI/UX Designer & Developer</p>
+                    <p><strong>Timeline:</strong> Jan. 2026 – May 2026</p>
                     <p><strong>Tech Stack:</strong> Flutter, Dart</p>
-                    <p><strong>Design Tools:</strong> Figma, Affinity</p>
+                    <p><strong>Design Tools:</strong> Figma, Adobe Illustrator</p>
                     <br />
                     <p>
-                        manGo is a bike and scooter rental application developed as a team project for a UX/UI class. 
-                        As the lead designer for the team, my primary focus was creating an intuitive, accessible, and visually engaging user experience.
+                        manGO is an Android bike and scooter rental app for campus mobility, developed as a team project for a UX/UI class. 
+                        As the lead designer for the team, I designed the UI/UX in Figma and Adobe Illustrator, then developed the app using Flutter and Dart.
                     </p>
                      <h3 style={{ marginTop: '20px', borderBottom: '2px solid #c268bd', paddingBottom: '5px' }}>Project Media</h3>
                      <div style={{ display: 'flex', gap: '20px', marginTop: '15px' }}>
@@ -85,17 +103,34 @@ export default function ProjectWindow({ projectId, onClose }) {
                 <div>
                     <h2>Ovarian Ultrasound Image Classification Using Supervised and Semi-Supervised Learning</h2>
                     <p><strong>Role:</strong> Team Lead</p>
-                    <p><strong>Tools:</strong>PyTorch, Google Colab</p>
+                    <p><strong>Timeline:</strong> Jan. 2026 – May 2026</p>
+                    <p><strong>Tools:</strong> Python, PyTorch, Google Colab</p>
                     <br />
                     <p>
                         An academic research project focused on the intersection of artificial intelligence and healthcare. 
-                        We utilized deep learning techniques to classify ovarian ultrasound images. The research is still in progress.
+                        We preprocessed ultrasound image datasets and built supervised and semi-supervised deep learning models 
+                        to classify ovarian conditions, comparing their performance using standard evaluation metrics.
                     </p>
                      <div style={{ display: 'flex', gap: '20px', marginTop: '15px' }}>
                         <a href={report} target="_blank" rel="noopener noreferrer" style={{ color: '#c268bd', fontWeight: 'bold', textDecoration: 'none' }}>
                             Read Midterm Report
                         </a>
                     </div>
+                </div>
+            )
+        },
+        stress: {
+            title: "C://projects/stress-and-cognition",
+            content: (
+                <div>
+                    <h2>Stress and Cognition: A Behavioral Study with Predictive Modeling</h2>
+                    <p><strong>Topic:</strong> Chronic Stress, Memory, and Executive Function: A Behavioral-Computational Study</p>
+                    <p><strong>Timeline:</strong> June 2026 (In progress)</p>
+                    <br />
+                    <p>
+                        Designing a human subjects study protocol combining validated cognitive and stress assessments 
+                        with a plan for ML-based analysis of the resulting data.
+                    </p>
                 </div>
             )
         },
